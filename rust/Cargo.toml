@@ -1,0 +1,42 @@
+[package]
+name = "mmadual"
+version = "0.2.1"
+edition = "2021"
+rust-version = "1.84"
+description = "MMA and GCMMA subproblems solved by the dual method (Rust port of mmadual)"
+license = "GPL-3.0-or-later"
+readme = "README.md"
+keywords = ["mma", "gcmma", "topology-optimization", "dual-method"]
+categories = ["science", "mathematics"]
+repository = "https://github.com/olavosilva/MMA-DUAL"
+authors = [
+    "Olavo M. Silva <olavo@lva.ufsc.br>",
+    "Rust port contributors",
+]
+
+[dependencies]
+ndarray = "0.16"
+faer = { version = "0.24", default-features = false, features = ["std", "linalg"] }
+
+[dev-dependencies]
+approx = "0.5"
+
+[[test]]
+name = "beam"
+path = "tests/beam.rs"
+
+[[test]]
+name = "dual_solver"
+path = "tests/dual_solver.rs"
+
+[[test]]
+name = "approximations"
+path = "tests/approximations.rs"
+
+[[test]]
+name = "gcmma_loop"
+path = "tests/gcmma_loop.rs"
+
+[[test]]
+name = "diagnostics"
+path = "tests/diagnostics.rs"

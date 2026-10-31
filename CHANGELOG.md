@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Rust port of the package under `rust/` (crate `mmadual`): dual solver (box and minimax paths),
+  MMA/GCMMA interfaces, diagnostics, and parity tests including Svanberg's beam. See `rust/README.md`.
+
 ## 0.2.1 (2026-10-31)
 
 Documentation release: `src/mmadual/` is identical to 0.2.0 (tag `v0.2.0`, commit `42b434c`); the version number changes so that the PyPI page carries the new README. The results recorded for 0.2.0 apply unchanged.

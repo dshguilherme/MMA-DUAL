@@ -55,6 +55,18 @@ Python ≥ 3.9 and `numpy` ≥ 1.20. The tests, examples and benchmarks compare 
 `pip install "mma-dual[test]"` installs `mmapy`, `scipy` and `pytest`. From a clone:
 `pip install -e ".[test]"`.
 
+### Rust crate
+
+A faithful Rust port lives in [`rust/`](rust/) (crate name `mmadual`, same GPL-3.0-or-later license).
+Build and test with:
+
+```
+cd rust && cargo test
+```
+
+See [`rust/README.md`](rust/README.md) for the Python→Rust API map. The algorithm and public names
+match the Python package; vectors are 1-D (`ndarray`).
+
 ## Minimal example
 
 Svanberg's five-variable cantilever beam (minimum weight with a tip-deflection limit), solved by an

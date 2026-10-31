@@ -3,6 +3,7 @@ __pycache__/
 build/
 dist/
 .pytest_cache/
+rust/target/
 
 mbb_*.npz
 mbb_*.png
